@@ -73,11 +73,11 @@ In this study, <mark>a database of UCS values and corresponding treatment along 
 
 **Previously published databases**
 
-![Highlights of the database](gajurel_table-a.1.png "Highlights of the database")
+![Highlights of the database](images/gajurel_table-a.1.png "Highlights of the database")
 
 **Parameters**
 
-![Summary of parameters](gajurel_table-a.3.png "Summary of parameters")
+![Summary of parameters](images/gajurel_table-a.3.png "Summary of parameters")
 
 ## Dataset 'D3': function "read_ngo"
 
@@ -121,7 +121,7 @@ Other important factors:
 Output:
 * q<sub>u</sub>: UCS of the cement–soil mixture
 
-![Inputs and outputs](ngo_table-1.png "Inputs and outputs")
+![Inputs and outputs](images/ngo_table-1.png "Inputs and outputs")
 
 ## Dataset 'D4': function "read_priyadarshee"
 
@@ -149,7 +149,7 @@ From the literature study, it was identified that ANN models have not been used 
 
 The experiments conducted on Kaolin clay for its unconfined compressive strength had variable parameters such as <mark>clay content (C), Pond ash (PC), Rice husk ash content (RC), Cement content (CC) and Curing Period (CP)</mark>. Therefore, these variable parameters were used as input data during the development of the model. Unconfined compressive strength (UCS) was considered as target data or output data.
 
-![Statistical parameters for all inputs and output](priyadarshee_table-2.png "Statistical parameters for all inputs and output")
+![Statistical parameters for all inputs and output](images/priyadarshee_table-2.png "Statistical parameters for all inputs and output")
 
 ## Dataset 'D5': function "read_mozumder"
 
@@ -173,7 +173,7 @@ An ANN based predictive model designated as ANNG (ANN model for geopolymer) was 
 
 MVR (multi-variable regression) model was developed with UCS as dependent variable and LL, PI, %S, %FA, M, A/B, Na/Al and Si/Al as independent variables.
 
-![Statistical parameters of training and testing data](mozumder_table-6.png "Statistical parameters of training and testing data")
+![Statistical parameters of training and testing data](images/mozumder_table-6.png "Statistical parameters of training and testing data")
 
 ## Dataset 'D6': function "read_taffese"
 
@@ -209,7 +209,7 @@ In this work, models based on an <mark>ensemble of regression trees (bagging or 
 
 **Parameters**
 
-![Description of the features](taffese_table-1.png "Description of the features")
+![Description of the features](images/taffese_table-1.png "Description of the features")
 
 ## Dataset 'D7': function "read_tabarsa"
 
@@ -237,7 +237,7 @@ This study was conducted to predict the UCS values of silty sand and high plasti
 * Rice husk ash (R)
 * UCS (q_u)
 
-![Experimental procedure](tabarsa_table-2.png "Experimental procedure")
+![Experimental procedure](images/tabarsa_table-2.png "Experimental procedure")
 
 ## Dataset 'D8': function "read_mahmoodzadeh"
 
@@ -257,7 +257,7 @@ Such studies all have shown more precision in using soft computing methods to fo
 
 **Parameters**
 
-![A brief review of the datasets](mahmoodzadeh_table-3.png "A brief review of the datasets")
+![A brief review of the datasets](images/mahmoodzadeh_table-3.png "A brief review of the datasets")
 
 ## Dataset 'D9': function "read_wang"
 
@@ -305,7 +305,7 @@ Therefore, it is feasible to use the <mark>MEP (multi expression programming)</m
 * calcium concentration M<sub>Ca</sub>
 * calcium carbonate content F<sub>Ca</sub>
 
-![Descriptive statistics of variables](wang_table-1.png "Descriptive statistics of variables")
+![Descriptive statistics of variables](images/wang_table-1.png "Descriptive statistics of variables")
 
 ## Dataset 'D10': function "read_zhang"
 
@@ -329,7 +329,7 @@ In this study, compressive and pullout strengths were carried out to investigate
 
 As mentioned above, <mark>the variables are the cement proportion, water content, and curing period</mark>. These variables can be used to compute the mass ratio of the raw materials (cement, water and soil). <mark>The out puts are the compressive strengt hand peak and residual pullout strengths with their datasets derived from the mechanical tests</mark>. Table 3 summarizes the basic database information for including raw materials and UCS, Tp, and Tt.
 
-![Input and output variables](zhang_table-3.png "Input and output variables")
+![Input and output variables](images/zhang_table-3.png "Input and output variables")
 
 ## Dataset 'RCA': function "read_yuan"
 
