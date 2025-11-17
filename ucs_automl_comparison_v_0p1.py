@@ -31,7 +31,7 @@ from autogluon.tabular import TabularDataset, TabularPredictor
 import h2o
 from h2o.automl import H2OAutoML
 
-h2o.init(nthreads=2)  # Adicionado multithreading por ROMULO MURUCCI
+h2o.init(nthreads=2)  # Multithreading added by ROMULO MURUCCI
 # h2o.init()
 
 from read_data_ucs import *
@@ -131,7 +131,7 @@ for run in range(1, n_runs + 1):
                 ],
                 "seed": seed,
                 "verbose": False,
-                "n_jobs": 2,  # Adicionado multithreading por ROMULO MURUCCI
+                "n_jobs": 2,  # Multithreading added by ROMULO MURUCCI
             }
             # TPOT
             pipeline_optimizer = TPOTRegressor(
@@ -140,12 +140,12 @@ for run in range(1, n_runs + 1):
                 cv=5,
                 random_state=seed,
                 verbosity=False,
-                n_jobs=2,  # Adicionado multithreading por ROMULO MURUCCI
+                n_jobs=2,  # Multithreading added by ROMULO MURUCCI
             )
 
-            # AutoSklearn
+            # AutoSklearn # Not used in this comparison
             include = {
-                "regressor": [  #'adaboost', 'ard_regression', 'decision_tree',
+                "regressor": [ 
                     "extra_trees",
                     "gaussian_process",
                     "gradient_boosting",
@@ -156,12 +156,11 @@ for run in range(1, n_runs + 1):
                     "random_forest",
                     "sgd",
                 ],
-                # "data_preprocessor": ["no_preprocessing"],
                 "feature_preprocessor": ["no_preprocessing"],
             }
 
             for auto in [
-                # "AutoSklearn",
+                # "AutoSklearn", # Not used in this comparison
                 "AutoGluon",
                 "AutoKeras",
                 "H2O",
@@ -183,10 +182,9 @@ for run in range(1, n_runs + 1):
                         train_data=train_data,
                         # eval_metric='mean_absolute_error',
                         verbosity=False,
-                        # num_cpus=4,  # O modelo já avalia o multithreading automatico
+                        # num_cpus=4,  # The model already evaluates multithreading automatically
                     )
                     y_pred = automl.predict(test_data).values
-                    # REMOVIDO "elif auto == "AutoSklearn":" ################################################
                 elif auto == "AutoKeras":
                     # X_train = X_train.astype('float32')
                     # y_train = y_train.astype('float32')
