@@ -48,7 +48,7 @@ n_runs = 30
 n_splits = 5
 epochs = 100
 scoring = "neg_root_mean_squared_error"
-for run in range(1, n_runs + 1):
+for run in range(n_runs):
     # random_seed=1
     seed = random_seed = run * 37 + 1001
     test_size = 0.30
