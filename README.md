@@ -1,4 +1,4 @@
-# AutoML-Based Forecasting of Unconfined Compressive Strength of Stabilized Soils at a Global Scale
+# AutoML-Based Prediction of Unconfined Compressive Strength of Stabilized Soils: A Multi-Dataset Evaluation on Worldwide Experimental Data
 
 This project uses **AutoML** with a focus on different libraries. To ensure compatibility between libraries, it is necessary to use specific versions of Python and the packages involved.
 
