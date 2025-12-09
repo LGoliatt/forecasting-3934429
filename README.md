@@ -368,30 +368,11 @@ In this study, gene expression programming (GEP) and multi gene expression progr
 * Why it's discouraged: Namespace pollution and lack of clarity due to wildcard imports.
 * Recommended alternative: Explicitly import matplotlib.pyplot and numpy.
 
-**`np.bool_` variable**
-
-NumPy also provides `np.bool_`, which is a distinct NumPy-specific boolean scalar type. While `np.bool` was an alias for the Python `bool`, `np.bool_` represents a NumPy scalar type optimized for array operations. In NumPy 2.0, `np.bool_` was renamed to `np.bool`, and `np.bool_` became an alias for the new `np.bool` for backward compatibility. This can lead to confusion, but the general recommendation is to use `bool` for type hinting and `np.bool_` (or the new `np.bool` in NumPy 2.0 and later) for creating boolean arrays or specifying the dtype of arrays.
-
-**Function "lhsu"**
-
-Defined but not used.
-
-**Variable `__name__`**
-
-In Python, `__name__` is a special built-in variable that holds the name of the current module. Its value changes depending on how the Python file is executed: 
-
-* When a script is run directly:
-If a Python file is executed as the main program (e.g., `python your_script.py`), the `__name__` variable within that file is automatically set to the string `"__main__"`.
-* When a script is imported as a module:
-If a Python file is imported into another Python file (e.g., `import your_module`), the `__name__` variable within the imported file is set to the name of the module (which is typically the filename without the `.py` extension). 
-
-This behavior is commonly used in conjunction with the `if __name__ == "__main__":` idiom. This conditional block allows developers to define code that should only execute when the script is run directly, and not when it is imported as a module. This is useful for including test code, initialization logic, or other operations that are specific to the script's direct execution and should not be triggered when the module's functions or classes are simply being used by another program.
-
-## Doubts/comments about papers
+## Comments about papers
 
 * Why the fuction "read_gajurel" has parameter treatment='Lime'? Why not using treatment=None? We have 2 types of treatments for this paper (Lime and Cement).
 
-It doesn't matter, because in the function "read_ucs" we have two datasets, each one for a type of treatment (Lime and Cement).
+It is a dummy parameter, because in the function "read_ucs" we have two datasets, each one for a type of treatment (Lime and Cement).
 
 * Why `categorical_columns` in the function "read_mahmoodzadeh" is empty? 
 
