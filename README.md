@@ -2,10 +2,8 @@
 
 This project uses **AutoML** with a focus on different libraries. To ensure compatibility between libraries, it is necessary to use specific versions of Python and the packages involved.
 
-**It is highly recommended to run the project on Linux**. If you are using Windows, it is recommended to use WSL (Windows Subsystem for Linux). In addition, it is recommended to use the `poetry` library.
-These recommendations aim to ensure better compatibility and performance of the libraries involved.
-
-Before running the project, be sure to configure the `pyproject.toml` file and run the virtual environment through poetry with the following versions:
+**It is highly recommended to run the project on Linux**. If you are using Windows, it is recommended to use WSL (Windows Subsystem for Linux). 
+Before running the project, be sure to install the packages:
 
 - **AutoGluon** 0.7.0
 - **AutoKeras** 1.0.20
