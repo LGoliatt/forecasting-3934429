@@ -47,9 +47,6 @@ Here are the datasets and related functions/papers:
 * Dataset 'D8': "read_mahmoodzadeh"
 * Dataset 'D9': "read_wang"
 * Dataset 'D10': "read_zhang"
-* Dataset 'RCA': "read_yuan" (not used in this study)
-* Dataset 'D0S': "read_burroughs" (already considered in the dataset D6)
-* Dataset 'S1': "read_jalal" (not used in this study)
 
 ## Datasets 'D1 e D2': function "read_gajurel"
 
