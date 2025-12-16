@@ -125,7 +125,6 @@ Output:
 
 ## Dataset 'D4': function "read_priyadarshee"
 
-<mark>The link in the “reference” field is wrong.</mark>
 
 **Title**: Neural Models for Unconfined Compressive Strength of Kaolin Clay Mixed with Pond Ash, Rice Husk Ash and Cement
 
