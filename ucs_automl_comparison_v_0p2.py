@@ -48,7 +48,7 @@ np.object = object
 pd.options.display.float_format = "{:.3f}".format
 basename = "rca_automl_"
 time_budget = 120
-n_runs = 5
+n_runs = 30
 n_splits = 5
 epochs = 100
 
