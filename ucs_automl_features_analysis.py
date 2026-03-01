@@ -64,7 +64,7 @@ def extract_feature_importances(json_files):
 
 #%%
 
-def plot_professional_feature_importances(data, title):
+def plot_pr_feature_importances(data, title):
     """
     Gera e salva um gráfico de importância de features com qualidade de publicação.
 
@@ -144,7 +144,7 @@ for folder_path in folder_paths:
     ucs_data = {key: value for key, value in ucs_data.items() if key not in ['fs', 'cs']}
 
     # Gera o gráfico com a nova função profissional
-    plot_professional_feature_importances(ucs_data, unique_dataset)
+    plot_pr_feature_importances(ucs_data, unique_dataset)
     
     
 #%%
