@@ -112,16 +112,16 @@ for run in range(n_runs):
     test_size = 0.30
 
     datasets = [
-        # read_ucs("D1", test_size=test_size, seed=random_seed),
-        # read_ucs("D2", test_size=test_size, seed=random_seed),
-        # read_ucs("D3", test_size=test_size, seed=random_seed),
+        read_ucs("D1", test_size=test_size, seed=random_seed),
+        read_ucs("D2", test_size=test_size, seed=random_seed),
+        read_ucs("D3", test_size=test_size, seed=random_seed),
         read_ucs("D4", test_size=test_size, seed=random_seed),
-        # read_ucs("D5", test_size=test_size, seed=random_seed),
-        # read_ucs("D6", test_size=test_size, seed=random_seed),
-        # read_ucs("D7", test_size=test_size, seed=random_seed),
-        # read_ucs("D8", test_size=test_size, seed=random_seed),
-        # read_ucs("D9", test_size=test_size, seed=random_seed),
-        # read_ucs("D10", test_size=test_size, seed=random_seed),
+        read_ucs("D5", test_size=test_size, seed=random_seed),
+        read_ucs("D6", test_size=test_size, seed=random_seed),
+        read_ucs("D7", test_size=test_size, seed=random_seed),
+        read_ucs("D8", test_size=test_size, seed=random_seed),
+        read_ucs("D9", test_size=test_size, seed=random_seed),
+        read_ucs("D10", test_size=test_size, seed=random_seed),
     ]
 
     for dataset in datasets:
@@ -212,10 +212,10 @@ for run in range(n_runs):
 
             for auto in [
                 "AutoGluon",
-                # "AutoKeras",
-                # "H2O",
+                "AutoKeras",
+                "H2O",
                 "TPOT",
-                # "FLAML"
+                "FLAML"
             ]:
                 start_time = time.time()
                 print(auto)
